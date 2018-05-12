@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         EditText textoPais = (EditText) findViewById(R.id.textoPais);
         listaPaises.add(textoPais.getText().toString());
         adapter.notifyDataSetChanged();
+        textoPais.setText("");
     }
 
     @Override
